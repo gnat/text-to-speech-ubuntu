@@ -20,3 +20,6 @@ Tested on Ubuntu 22.04 LTS and higher, but may work on other distributions. `xse
 * `-g0` No delay.
 * `-p30` Pitch (50 is normal).
 * `-v en-us` Voice pack.
+
+### Why?
+Because my favorite TTS reader [gespeaker](https://github.com/muflone/gespeaker) (python frontend to espeak) is unmaintained, and most other options suck or are browser only.
