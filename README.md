@@ -9,6 +9,8 @@ For speed reading, researching, programming, editing and writing.
 
 Recommended keys **SUPER + R** (Speak) and **SHIFT + SUPER + R** (Stop Speaking)
 
+With your mouse, select text you want read aloud, press your Speak key.
+
 ### Screenshot
 
 ![screenshot](https://github.com/gnat/text-to-speech-ubuntu/blob/main/screenshot.png)
