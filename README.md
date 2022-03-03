@@ -5,6 +5,8 @@
 3. **Speak** `bash -c "espeak-ng -s260 -g0 -p30 -v en-us \"$(xsel | sed -e :a -e '$!N;s/\n/ /;ta')\""`
 4. **Stop Speaking** `bash -c "killall espeak-ng"`
 
+Recommended keys **SUPER + R** (Speak) and **SHIFT + SUPER + R** (Stop Speaking)
+
 ### Screenshot
 
 ![screenshot](https://github.com/gnat/text-to-speech-ubuntu/blob/main/screenshot.png)
