@@ -13,7 +13,7 @@ Recommended keys **SUPER + R** (Speak) and **SHIFT + SUPER + R** (Stop Speaking)
 
 ![screenshot](https://github.com/gnat/text-to-speech-ubuntu/blob/main/screenshot.png)
 
-Tested on Ubuntu 22.04 LTS and higher, but may work on other distributions. `xsel` required so espeak can read from clipboard.
+Tested on Ubuntu 22.04 LTS and higher, but may work on other distributions. `xsel` required so espeak can read from clipboard. `espeak` will also work but most distributions are moving to `espeak-ng`.
 
 ### Options
 * `-s260` Set higher for faster speed.
