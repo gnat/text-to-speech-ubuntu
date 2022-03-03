@@ -15,7 +15,7 @@ With your mouse, select text you want read aloud, press your Speak key.
 
 ![screenshot](https://github.com/gnat/text-to-speech-ubuntu/blob/main/screenshot.png)
 
-Tested on Ubuntu 22.04 LTS and higher, but may work on other distributions. `xsel` required so espeak can read from clipboard. `espeak` will also work but most distributions are moving to `espeak-ng`.
+Tested on Ubuntu 22.04 LTS and higher, but should work on similar distributions such as Mint, Debian, Pop OS. `xsel` required so espeak can read from clipboard. `espeak` will also work but most distributions are moving to `espeak-ng`.
 
 ### Options
 * `-s260` Set higher for faster speed.
