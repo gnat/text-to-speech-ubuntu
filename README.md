@@ -2,10 +2,10 @@
 
 For speed reading, researching, programming, editing and writing.
 
-1. `sudo apt install espeak-ng xsel -y`
+1. `sudo apt install espeak xsel -y`
 2. **System Settings** ➡ **Keyboard** ➡ **Keyboard Shortcuts** ➡ **Custom Shortcuts** ➡ **+**
-3. **Read** `bash -c "espeak-ng -s260 -g0 -p40 -v en-us \"$(xsel | sed -e :a -e 'N;s/\n/ /;ta')\""`
-4. **Stop Reading** `bash -c "killall espeak-ng"`
+3. **Read** `bash -c "espeak -s260 -g0 -p40 -v english-us \"$(xsel | sed -e :a -e 'N;s/\n/ /;ta')\""`
+4. **Stop Reading** `bash -c "killall espeak"`
 
 Recommended keys **SUPER + R** (Read) and **SHIFT + SUPER + R** (Stop Reading)
 
@@ -30,6 +30,12 @@ The sed is required to replace newlines properly. Reference: https://linux.die.n
 * `N` Read next line into substitute buffer ... or `$!N` (`$` go to EOL, `!N` exit if no more newlines to read)
 * `;s/\n/ /` Substitute newlines with space.
 * `;ta` Loop to label `a`.
+
+### Using espeak-ng instead of espeak
+Some distributions come with `espeak-ng` which can be used with only minor changes.
+
+1. **Read** `bash -c "espeak-ng -s260 -g0 -p40 -v en-us \"$(xsel | sed -e :a -e 'N;s/\n/ /;ta')\""`
+2. **Stop Reading** `bash -c "killall espeak-ng"`
 
 ### Why?
 Because my favorite TTS reader [gespeaker](https://github.com/muflone/gespeaker) (python frontend to espeak) is unmaintained, and most other options suck or are browser only.
