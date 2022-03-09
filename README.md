@@ -4,12 +4,12 @@ For speed reading, researching, programming, editing and writing.
 
 1. `sudo apt install espeak-ng xsel -y`
 2. **System Settings** ➡ **Keyboard** ➡ **Keyboard Shortcuts** ➡ **Custom Shortcuts** ➡ **+**
-3. **Speak** `bash -c "espeak-ng -s260 -g0 -p40 -v en-us \"$(xsel | sed -e :a -e 'N;s/\n/ /;ta')\""`
-4. **Stop Speaking** `bash -c "killall espeak-ng"`
+3. **Read** `bash -c "espeak-ng -s260 -g0 -p40 -v en-us \"$(xsel | sed -e :a -e 'N;s/\n/ /;ta')\""`
+4. **Stop Reading** `bash -c "killall espeak-ng"`
 
-Recommended keys **SUPER + R** (Speak) and **SHIFT + SUPER + R** (Stop Speaking)
+Recommended keys **SUPER + R** (Read) and **SHIFT + SUPER + R** (Stop Reading)
 
-With your mouse, select text you want read aloud, press your Speak key.
+With your mouse, select text you want read aloud, press your Read key.
 
 ### Screenshot
 
