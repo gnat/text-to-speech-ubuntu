@@ -18,10 +18,10 @@ With your mouse, select text you want read aloud, press your Read key.
 Tested on Ubuntu 22.04 LTS and higher, but should work on similar distributions such as Mint, Debian, Pop OS. `xsel` required so espeak can read from clipboard. `espeak` will also work but most distributions are moving to `espeak-ng`.
 
 ### Options
-* `-s260` Set higher for faster speed.
-* `-g0` No delay.
+* `-s260` Speed of reading (260 is faster)
+* `-g0` Delay between words (0 is no delay).
 * `-p40` Pitch (50 is normal).
-* `-v en-us` Voice pack.
+* `-v english-us` Voice pack (en-us for `espeak-ng`).
 
 ### Sed explainer.
 The sed is required to replace newlines properly. Reference: https://linux.die.net/man/1/sed
