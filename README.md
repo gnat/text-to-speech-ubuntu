@@ -7,7 +7,7 @@ For speed reading, researching, programming, editing and writing.
 3. **Read** `bash -c "espeak -s260 -g0 -p40 -v english-us \"$(xsel | sed -e :a -e 'N;s/\n/ /;ta')\""`
 4. **Stop Reading** `bash -c "killall espeak"`
 
-Recommended keys **SUPER + R** (Read) and **SHIFT + SUPER + R** (Stop Reading)
+Recommended keys **SUPER/Windows + R** (Read) and **SHIFT + SUPER/Windows + R** (Stop Reading)
 
 With your mouse, select text you want read aloud, press your Read key.
 
