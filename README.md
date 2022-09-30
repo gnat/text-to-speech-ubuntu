@@ -37,5 +37,10 @@ Some distributions come with `espeak-ng` which can be used with only minor chang
 1. **Read** `bash -c "espeak-ng -s260 -g0 -p40 -v en-us \"$(xsel | sed -e :a -e 'N;s/\n/ /;ta')\""`
 2. **Stop Reading** `bash -c "killall espeak-ng"`
 
+### Using KDE custom shortcuts.
+KDE keyboard shortcuts have major issues with multiple commands in the same action. In the short term this seems to work, although it is not as robust as the Gnome version:
+
+* `xsel > /tmp/speak.txt | espeak -s260 -g0 -p40 -v english-us -f /tmp/speak.txt`
+
 ### Why?
 Because my favorite TTS reader [gespeaker](https://github.com/muflone/gespeaker) (python frontend to espeak) is unmaintained, and most other options suck or are browser only.
