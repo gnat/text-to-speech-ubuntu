@@ -5,7 +5,7 @@ For speed reading, researching, programming, editing and writing.
 Tested on Ubuntu 22.04, 22.10, 23.04, 23.10, but should work on similar distributions such as Mint, Debian, Pop OS. `xsel` required so espeak can read from clipboard. Works with `espeak` or `espeak-ng`.
 
 1. `sudo apt install espeak xsel -y`
-2. Set your custom shortcuts. See Gnome or KDE below.
+2. Set your custom shortcuts. See [Gnome](#gnome) or [KDE](#kde) below.
 3. With your mouse, select text you want read aloud, press your Read keys.
 
 
