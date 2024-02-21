@@ -2,7 +2,7 @@
 
 For speed reading, researching, programming, editing and writing.
 
-Tested on Ubuntu 22.04, 22.10, 23.04, 23.10, but should work on similar distributions such as Mint, Debian, Pop OS. `xsel` required so espeak can read from clipboard. Works with `espeak` or `espeak-ng`.
+Tested on Ubuntu 22.04, 22.10, 23.04, 23.10, 24.04, but should work on similar distributions such as Mint, Debian, Pop OS. `xsel` required so espeak can read from clipboard. Works with `espeak` or `espeak-ng`.
 
 1. `sudo apt install espeak xsel -y`
 2. Set your custom shortcuts. See [Gnome](#gnome) or [KDE](#kde) below.
@@ -52,7 +52,8 @@ Some distributions come with `espeak-ng` which can be used with only minor chang
 1. **Read** `bash -c "espeak-ng -s260 -g0 -p40 -v en-us \"$(xsel | sed -e :a -e 'N;s/\n/ /;ta')\""`
 2. **Stop Reading** `bash -c "killall espeak-ng"`
 
-
+### Killing espeak if needed.
+* `ps -ef | grep "espeak" | tr -s ' ' | cut -d ' ' -f2 | xargs kill -9`
 
 ### Why?
 Because my favorite TTS reader [gespeaker](https://github.com/muflone/gespeaker) (python frontend to espeak) is unmaintained, and most other options suck or are browser only.
