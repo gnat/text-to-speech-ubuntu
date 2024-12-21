@@ -48,8 +48,7 @@ Tested on Ubuntu 24.04, 22.04, 22.10, 23.04, 23.10, but should work on similar d
 * Recommended keys **SUPER + R** (Read) and **SHIFT + SUPER + R** (Stop Reading)
 * With your mouse, select text you want read aloud, press your Read keys.
 
-![screenshot](https://github.com/gnat/text-to-speech-ubuntu/blob/main/screenshot.png)
-
+![image](https://github.com/user-attachments/assets/35b475ca-fca8-4ea0-b52e-470b216b7a10)
 
 ### KDE
 KDE is a little different because custom shortcuts have an issue with multiple commands in the same action, but this works:
