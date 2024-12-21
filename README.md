@@ -21,9 +21,11 @@ Categories=Utility;
 
 Short and sweet single Python script. Built in Qt 6. Supports both Wayland and X11
 
+<br><br>
 
 ----
-# 🪦 Legacy Notes
+
+# 🪦 Old Method (Deprecated)
 
 **Below is deprecated because Wayland has no support for retrieving selected text.**
 
