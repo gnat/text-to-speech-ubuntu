@@ -1,6 +1,6 @@
 # Text to Speech (TTS) GUI for Linux / Ubuntu / Kubuntu
 
-![image](https://github.com/user-attachments/assets/caaafc1d-2e20-4591-aa73-c201de8556c4)
+![image](https://github.com/user-attachments/assets/42784801-a81f-4d81-9b5c-7a98eae66c5c)
 
 
 ## 🎁 Installation
