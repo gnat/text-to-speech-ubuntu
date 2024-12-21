@@ -1,4 +1,33 @@
-# Text to Speech (TTS) Shortcut Ubuntu
+# Text to Speech (TTS) GUI for Linux / Ubuntu / Kubuntu
+
+![image](https://github.com/user-attachments/assets/caaafc1d-2e20-4591-aa73-c201de8556c4)
+
+
+## 🎁 Installation
+1. Download [tts.py](https://raw.githubusercontent.com/gnat/text-to-speech-ubuntu/refs/heads/main/tts.py) to your Desktop.
+2. Install dependencies: `sudo apt install espeak python3-pyqt6`
+3. Make runnable: `cd ~/Desktop; chmod +x ./tts.py`
+4. Create `tts.desktop`
+```ini
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Text To Speech (espeak)
+Exec=/usr/bin/python3 /home/$USER/Desktop/tts.py
+Icon=audio-on
+Terminal=false
+Type=Application
+Categories=Utility;
+```
+
+Short and sweet single Python script. Built in Qt 6. Supports both Wayland and X11
+
+
+----
+# 🪦 Legacy Notes
+
+**Below is deprecated because Wayland has no support for retrieving selected text.**
+
+## Text to Speech (TTS) Shortcut Ubuntu
 
 For speed reading, researching, programming, editing and writing.
 
