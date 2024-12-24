@@ -26,11 +26,11 @@ class TextToSpeechApp(QMainWindow):
 
 		# Speed Slider Layout
 		speed_layout = QHBoxLayout()
-		self.speed_slider_label = QLabel("Speed: 260")
+		self.speed_slider_label = QLabel("Speed: 280")
 		self.speed_slider = QSlider(Qt.Orientation.Horizontal)
 		self.speed_slider.setMinimum(80)
 		self.speed_slider.setMaximum(450)
-		self.speed_slider.setValue(260)
+		self.speed_slider.setValue(280)
 		self.speed_slider.valueChanged.connect(self.update_speed_label)
 		speed_layout.addWidget(self.speed_slider_label)
 		speed_layout.addWidget(self.speed_slider)
@@ -54,11 +54,13 @@ class TextToSpeechApp(QMainWindow):
 		# Speak Button
 		self.button_speak = QPushButton("💬 Speak", self)
 		self.button_speak.clicked.connect(self.speak_text)
+		self.button_speak.setFixedHeight(60)
 		button_layout.addWidget(self.button_speak)
 
 		# Stop Button
 		self.button_stop = QPushButton("🛑 Stop", self)
 		self.button_stop.clicked.connect(self.stop_speaking)
+		self.button_stop.setFixedHeight(60)
 		button_layout.addWidget(self.button_stop)
 		layout.addLayout(button_layout)
 
@@ -73,6 +75,7 @@ class TextToSpeechApp(QMainWindow):
 		speed = self.speed_slider.value()
 		pitch = self.pitch_slider.value()
 		if text:
+			self.stop_speaking()
 			try:
 				# Run espeak asynchronously
 				subprocess.Popen(["espeak", f"-s{speed}", "-g0", f"-p{pitch}", "-v", "english-us", text])
